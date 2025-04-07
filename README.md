@@ -32,6 +32,7 @@ Builds a Docker image
 Logs in to DockerHub
 
 Pushes the image to DockerHub
+![Workflow Success](assets/workflow-success.png)
 
 Added File Filters
 I added path filters to the workflow so it only runs when important files (like .js, Dockerfile, or package.json) are changed. This prevents the workflow from running for small changes like README.md edits.
