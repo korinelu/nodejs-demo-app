@@ -4,6 +4,12 @@ on:
   push:
     branches:
       - master
+    paths:
+      - '**.js'
+      - 'package.json'
+      - 'package-lock.json'
+      - 'Dockerfile'
+      - '.github/workflows/**'
 
 jobs:
   build-and-deploy:
@@ -32,3 +38,4 @@ jobs:
 
     - name: Push Docker image
       run: docker push ${{ secrets.DOCKER_USERNAME }}/nodejs-demo-app
+
